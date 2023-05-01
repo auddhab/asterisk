@@ -3,6 +3,7 @@ services:
   asterisk:
     build: .
     ports:
-      - 5060:5060/udp
-      - 5061:5061/udp
-      - 10000-12000:10000-12000/udp
+      - "5060:5060/udp"                     # SIP UDP port
+      - "5060:5060"                         # SIP TCP port
+      - "5061:5061"                         # SIP TLS port
+      - "10000-10099:10000-10099/udp"       # RTP ports
