@@ -1,8 +1,8 @@
 FROM ubuntu:latest
 
-RUN apt-get update && apt-get upgrade 
+RUN apt-get update -y && apt-get upgrade -y 
 
-RUN apt-get install unixodbc bison wget openssl libssl-dev libasound2-dev libc6-dev libxml2-dev libsqlite3-dev libnewt-dev libncurses5-dev zlib1g-dev gcc g++ make perl uuid-dev git subversion unixodbc-dev autoconf libedit-dev
+RUN apt-get install -y unixodbc bison wget openssl libssl-dev libasound2-dev libc6-dev libxml2-dev libsqlite3-dev libnewt-dev libncurses5-dev zlib1g-dev gcc g++ make perl uuid-dev git subversion unixodbc-dev autoconf libedit-dev
 
 WORKDIR /usr/src
 

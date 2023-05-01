@@ -1,0 +1,8 @@
+version: "3"
+services:
+  asterisk:
+    build: .
+    ports:
+      - 5060:5060/udp
+      - 5061:5061/udp
+      - 10000-20000:10000-20000/udp
